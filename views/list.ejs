@@ -10,5 +10,17 @@
     <p>
       hi, user. today is <%=day%>
     </p>
+    <ul>
+
+      <% for (var i = 0; i<newItems.length; i++){ %>
+       <li> <%= newItems[i] %> </li>
+      <%  } %>
+
+    </ul>
+
+    <form class="" action="/" method="post">
+      <input type="text" name="newItem">
+      <button type="submit" name="button">Add Item</button>
+    </form>
   </body>
 </html>
